@@ -1,0 +1,229 @@
+/* 1. header: logo */
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+  margin: 15% 0;
+  position: relative;
+  cursor: pointer;
+}
+.header-logo img {
+  position: absolute;
+  transition: all 0.5s;
+}
+.logo {
+  /* width: 77%; */
+  width: 267px;
+  z-index: 1;
+}
+.logobg {
+  /* width: 33%; */
+  width: 125px;
+}
+
+/* - content 여러개 같이 */
+.famous-phrase-title,
+.famous-phrase,
+.input-box,
+.click-box,
+.result,
+.go-box {
+  margin-bottom: 20%;
+}
+/* - font */
+.font-base {
+  font-family: var(--font-base);
+}
+.font-white {
+  color: var(--text-primary);
+}
+.font-bold {
+  font-family: var(--font-bold);
+}
+.input-box p,
+.result {
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* 2. 명언 */
+.famous-phrase-title {
+  font-family: var(--font-quote);
+  font-size: 1.6rem;
+  color: var(--text-quote);
+  font-weight: bold;
+  transition: all 1s;
+}
+.famous-phrase {
+  width: 100%;
+  font-weight: 300;
+  line-height: 2rem;
+  text-align: center;
+  background: url("../images/quotes.png") no-repeat center;
+  transition: all 1s;
+}
+.famous-phrase b {
+  font-family: var(--font-medium);
+  font-size: 1.1rem;
+}
+@media (max-width: 767px) {
+  .famous-phrase {
+    background-size: 80%;
+  }
+}
+
+/* 3. input: 작성 */
+.input-box {
+  transition: all 1s;
+}
+input[type="text"] {
+  width: 160px;
+  padding: 10px 0;
+  color: var(--text-secondary);
+  text-align: center;
+  border-radius: 7px;
+  border: transparent;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+@media (max-width: 767px) {
+  input[type="text"] {
+    width: 160px;
+  }
+}
+
+/* 4. Click: 확인 버튼 */
+.click-box {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  transition: all 1s;
+}
+.click-box .btn {
+  position: relative;
+}
+.icon-click {
+  position: absolute;
+}
+@media (max-width: 767px) {
+  .click-box .btn {
+    width: 220px;
+    padding: 15px 2rem;
+    line-height: 1.5rem;
+    border-radius: 14px;
+  }
+  .icon-click {
+    width: 43px;
+    height: 48px;
+    right: -45px;
+    bottom: -10px;
+  }
+}
+
+/* 5. Result: 결과 */
+.result {
+  line-height: 3rem;
+  transition: all 1s;
+}
+.result strong {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 5px;
+  font-size: 1.7rem;
+}
+
+/* 6. Go: 훈련하러 가기 */
+.go-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  transition: all 1s;
+}
+.go-box .btn-sharing {
+  background-color: var(--text-primary);
+}
+@media (max-width: 767px) {
+  .go-box .btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+  }
+}
+
+/* 반응형: 태블릿/데스크톱 버전 */
+@media (min-width: 768px) {
+  /* 1. header: logo */
+  .header-logo {
+    height: 300px;
+    margin: 20% auto;
+  }
+  .logo {
+    width: 564px;
+    height: 112px;
+    top: 94px;
+    left: 60px;
+  }
+  .logobg {
+    width: 261px;
+    height: 265px;
+    top: 20px;
+    left: 220px;
+  }
+
+  /* : font */
+  .famous-phrase,
+  .input-box p,
+  input[type="text"],
+  .result {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  /* 2. 명언 */
+  .famous-phrase-title {
+    font-size: 2.25rem;
+  }
+  .famous-phrase {
+    line-height: 3rem;
+    background-size: 100%;
+  }
+  .famous-phrase b {
+    font-family: var(--font-bold);
+    font-size: 1.8rem;
+  }
+
+  /* 3. input: 작성 */
+  input[type="text"] {
+    width: 230px;
+  }
+
+  /* 4. click icon */
+  .icon-click {
+    width: 64px;
+    height: 72px;
+    right: -65px;
+    bottom: -20px;
+  }
+
+  /* 5. Result: 결과 */
+  .result {
+    line-height: 5rem;
+  }
+  .result strong {
+    font-size: 4.5rem;
+  }
+
+  /* buutton */
+  .btn {
+    padding: 0.5rem 2.5rem 0.2rem 2.5rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    border-radius: 30px;
+  }
+
+  /* 버튼들 사이 간격 */
+  .go-box {
+    gap: 20px;
+  }
+}
