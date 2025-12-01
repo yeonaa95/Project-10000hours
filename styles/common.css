@@ -117,3 +117,16 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* transition: 부드럽게 만들기 */
+.header-logo img {
+  transition: all 0.5s;
+}
+.famous-phrase-title,
+.famous-phrase,
+.input-box,
+.click-box,
+.result,
+.go-box {
+  transition: all 1s;
+}
