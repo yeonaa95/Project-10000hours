@@ -1,6 +1,6 @@
 # 프로젝트 실습 / Project-10000hours
 
-> 첫번째 개인 프로젝트 실습 1 - 1만 시간의 법칙 <br> 
+> 첫번째 개인 프로젝트 실습 1 : 1만 시간의 법칙 <br> 
 > https://yeonaa95.github.io/Project-10000hours/
 
 ---
